@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 class Day2 {
 
     @Test
-    fun solution_first_part() {
+    fun `first part`() {
         val result = getResourceAsFile("/day2/input").readLines().fold(Pair(0,0)) { acc, line ->
             when (line.substring(0,1)) {
                 "f" -> Pair(acc.first + line.extractInt(), acc.second)
